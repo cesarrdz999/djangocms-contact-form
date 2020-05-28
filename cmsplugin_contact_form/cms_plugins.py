@@ -52,7 +52,7 @@ class ContactFormCMSPlugin(CMSPluginBase):
                 message=message,
                 html_message=message,
                 from_email=request.POST[email_key],
-                recipient_list=['elaela002@outlook.com'],
+                recipient_list=['info@vertical.it'],
                 fail_silently=False,
                 connection=get_connection(
                     backend='django.core.mail.backends.smtp.EmailBackend',

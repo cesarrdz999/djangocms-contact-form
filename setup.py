@@ -10,7 +10,7 @@ setup(
     long_description=open('README.md').read(),
     maintainer='Cesar',
     maintainer_email='contato@cesar.com',
-    url='https://github.com/juliarizza/djangocms_contact_form',
+    url='https://github.com/cesarrdz999/djangocms-contact-form',
     license='MIT',
     keywords='django djangocms plugin form contact email',
     packages=['cmsplugin_contact_form'],

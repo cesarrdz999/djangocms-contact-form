@@ -25,7 +25,7 @@ class ContactFormCMSPlugin(CMSPluginBase):
     def render(self, context, instance, placeholder):
         request = context['request']
         if request.method == 'POST':
-            message = "New message from your website:\n\n"
+            message = "New message from Vertical:\n\n"
             email_field = [
                 inst for inst in instance.child_plugin_instances
                 if isinstance(inst, models.ContactFormTextFieldCMS)
@@ -48,7 +48,7 @@ class ContactFormCMSPlugin(CMSPluginBase):
                 )
 
             send_mail(
-                subject="New message from your website",
+                subject="New message from Vertical",
                 message=message,
                 html_message=message,
                 from_email=request.POST[email_key],
